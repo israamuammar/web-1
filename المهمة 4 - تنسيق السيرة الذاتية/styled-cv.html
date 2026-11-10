@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السيرة الذاتية - إسراء معمر</title>
+    <style>
+        /* إعدادات الصفحة والخط العام */
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+            margin: 0;
+            padding: 30px 15px;
+        }
+
+        /* حاوية السيرة الذاتية الرئيسية */
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #1e293b;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* رأس السيرة بخلفية متدرجة */
+        .cv-header {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            text-align: center;
+            padding: 35px 20px;
+            border-radius: 12px 12px 0 0;
+        }
+
+        /* الصورة الشخصية الدائرية */
+        .cv-header img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #4caf50;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            margin-bottom: 15px;
+        }
+
+        .cv-header h1 {
+            margin: 10px 0 5px;
+            font-size: 1.8rem;
+            color: #ffffff;
+        }
+
+        .cv-header .subtitle {
+            margin: 0 0 15px;
+            color: #94a3b8;
+            font-size: 1rem;
+        }
+
+        .cv-header .contact-bar {
+            font-size: 0.9rem;
+            color: #cbd5e1;
+        }
+
+        /* محتوى الأقسام */
+        .cv-content {
+            padding: 25px 35px;
+        }
+
+        h2 {
+            color: #38bdf8;
+            font-size: 1.25rem;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 6px;
+            margin-top: 20px;
+            margin-bottom: 12px;
+        }
+
+        /* قائمة المهارات على شكل وسوم */
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .skills-list li {
+            display: inline-block;
+            background: #334155;
+            color: #4caf50;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        /* جدول التعليم */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #334155;
+        }
+
+        th {
+            background-color: #0f172a;
+            color: #4caf50;
+            padding: 10px;
+            text-align: right;
+            font-size: 0.9rem;
+        }
+
+        td {
+            padding: 9px 10px;
+            font-size: 0.85rem;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #162032;
+        }
+
+        /* تنسيق الروابط */
+        a {
+            color: #4caf50;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #81c784;
+            text-decoration: underline;
+        }
+
+        /* عرض المشاريع السابقة */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 12px;
+        }
+
+        .project-card {
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 8px;
+        }
+
+        .project-card h4 {
+            margin: 4px 0;
+            color: #ffffff;
+            font-size: 0.95rem;
+        }
+
+        .project-card p {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        /* روابط التواصل في الأسفل */
+        .contact-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .contact-links li {
+            background: #0f172a;
+            padding: 8px 14px;
+            border-radius: 6px;
+            border: 1px solid #334155;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        
+        <!-- الترويسة والصورة الشخصية -->
+        <header class="cv-header">
+            <img src="israa.png" alt="صورة إسراء معمر">
+            <h1>إسراء عمر معمر</h1>
+            <p class="subtitle">مصممة جرافيك | طالبة نظم معلومات في جامعة الأقصى</p>
+            <div class="contact-bar">
+                <span>غزة، فلسطين</span> | 
+                <span>البريد: <a href="mailto:israa0002002@gmail.com">israa0002002@gmail.com</a></span> | 
+                <span>الهاتف: <a href="tel:0592440818">0592440818</a></span> | 
+                <span><a href="https://mostaql.com/u/israa_muammar/portfolio" target="_blank">معرض مستقل</a></span>
+            </div>
+        </header>
+
+        <div class="cv-content">
+            
+            <!-- نبذة عني -->
+            <section>
+                <h2>نبذة عني</h2>
+                <p>
+                    أنا إسراء عمر معمر، مصممة جرافيك وطالبة نظم معلومات في جامعة الأقصى من غزة. أعمل في تصميم الشعارات والهويات البصرية وإعلانات السوشيال ميديا، وأحب الجمع بين التصميم وتطوير صفحات الويب لتقديم عمل مريح وبسيط.
+                </p>
+            </section>
+
+            <!-- المهارات -->
+            <section>
+                <h2>المهارات</h2>
+                <ul class="skills-list">
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>تصميم الشعارات</li>
+                    <li>تصميم إعلانات وبوسترات</li>
+                    <li>تصميم ستوري إنستغرام</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>نظم المعلومات</li>
+                    <li>التصميم المتجاوب</li>
+                </ul>
+            </section>
+
+            <!-- التعليم -->
+            <section>
+                <h2>التعليم</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>الدرجة العلمية</th>
+                            <th>المؤسسة</th>
+                            <th>السنة</th>
+                            <th>الحالة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>بكالوريوس نظم معلومات</td>
+                            <td>جامعة الأقصى</td>
+                            <td>2023 - حتى الآن</td>
+                            <td>قيد الدراسة</td>
+                        </tr>
+                        <tr>
+                            <td>شهادة الثانوية العامة</td>
+                            <td>المدرسة الثانوية</td>
+                            <td>2019 - 2023</td>
+                            <td>مكتملة</td>
+                        </tr>
+                        <tr>
+                            <td>دورات في التصميم الجرافيكي</td>
+                            <td>تدريب ذاتي ومنصات تعليمية</td>
+                            <td>2024</td>
+                            <td>مكتملة</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- نماذج من أعمالي السابقة -->
+            <section>
+                <h2>نماذج من أعمالي السابقة</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="project1_story.jpg" alt="تصميم ستوري كافيه">
+                        <h4>ستوري إنستغرام لكافيه</h4>
+                        <p>تصميم ستوري مخصص لكافيه بأسلوب جذاب لإبراز هوية المكان.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="project2_cnt.jpg" alt="بوستر متجر CNT">
+                        <h4>بوستر إعلان لمتجر CNT</h4>
+                        <p>تصميم إعلان سوشيال ميديا يروج لمنتجات المتجر بطريقة واضحة.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="project3_codemap.jpg" alt="بوستر دورة كود ماب">
+                        <h4>بوستر دورة كود ماب</h4>
+                        <p>تصميم بوستر إعلاني لدورة تدريبية موجهة للطلاب والمطورين.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- معلومات التواصل -->
+            <section>
+                <h2>التواصل</h2>
+                <ul class="contact-links">
+                    <li><a href="mailto:israa0002002@gmail.com">إرسال بريد إلكتروني</a></li>
+                    <li><a href="tel:0592440818">الاتصال عبر الهاتف</a></li>
+                    <li><a href="https://mostaql.com/u/israa_muammar/portfolio" target="_blank">رابط معرض أعمالي على مستقل</a></li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+
+</body>
+</html>
